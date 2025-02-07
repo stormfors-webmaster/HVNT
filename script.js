@@ -19,10 +19,6 @@ document.addEventListener("DOMContentLoaded", function () {
   // Hide yearly price by default
   yearlyPrice.style.display = "none";
 
-  /**
-   * Calculates total price based on number of players and selected currency
-   * Uses price tiers stored in currency button data attributes
-   */
   function calculatePrice(players, currency) {
     const selectedButton = document.querySelector(
       `[data-currency="${currency}"]`
@@ -40,10 +36,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return price * players;
   }
 
-  /**
-   * Updates the slider's visual fill based on current value
-   * Creates a dynamic fill effect as the slider moves
-   */
   function updateTrackFill() {
     const min = input.getAttribute("min") || 5;
     const max = input.getAttribute("max") || 250;
@@ -53,10 +45,6 @@ document.addEventListener("DOMContentLoaded", function () {
     input.style.setProperty("--track-fill-percentage", fillPercentage + "%");
   }
 
-  /**
-   * Updates displayed player count and calculated price
-   * Formats currency according to selected currency type
-   */
   function updateUI(valueElement) {
     const formatter = new Intl.NumberFormat("en-US", {
       style: "currency",
@@ -73,10 +61,6 @@ document.addEventListener("DOMContentLoaded", function () {
     updateTrackFill();
   }
 
-  /**
-   * Updates all business plan prices based on selected currency
-   * Retrieves prices from currency button data attributes
-   */
   function updateBusinessPlanPrices(currency) {
     const selectedButton = document.querySelector(
       `[data-currency="${currency}"]`
@@ -102,10 +86,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  /**
-   * Toggles visibility of Create Account and Contact Us buttons
-   * Shows Contact Us button only when max players are selected
-   */
   function toggleButtons() {
     const isMaxPlayers =
       parseInt(input.value, 10) === parseInt(input.getAttribute("max"), 10);
@@ -113,12 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
     contactUsBtn.style.display = isMaxPlayers ? "block" : "none";
   }
 
-  /**
-   * Converts currency code to country code
-   * Special handling for EUR and common currency codes
-   * @param {string} currencyCode - ISO 4217 currency code
-   * @returns {string} ISO 3166-1 alpha-2 country code (lowercase)
-   */
   function getCurrencyCountryCode(currencyCode) {
     // Special cases
     const specialCases = {
@@ -136,9 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
     return currencyCode.slice(0, 2).toLowerCase();
   }
 
-  /**
-   * Updates flag images using Flagcdn
-   */
   function updateFlagImages() {
     const currencyButtons = document.querySelectorAll("[data-currency]");
     currencyButtons.forEach((button) => {
