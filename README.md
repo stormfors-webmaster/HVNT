@@ -24,6 +24,14 @@ toggleDevMode();
 
 5. Refresh page and check console for `✅ Dev Mode Active`
 
+## Deploying Updates
+
+1. Test changes on staging domain using development mode eg. `toggleDevMode();`
+2. Push changes to GitHub repository
+3. Update jsDelivr link if needed
+4. Purge jsDelivr cache at [jsDelivr Purge Tool](https://www.jsdelivr.com/tools/purge)
+5. disable development mode to see the changes live
+
 ## Dependencies
 
 - Webflow CMS: Source of pricing data
@@ -89,14 +97,6 @@ Elements with the following ID's will display the monthly/yearly price from the 
 - `#monthly-price-text-offer`
 - `#yearly-price-text-original`
 - `#yearly-price-text-offer`
-
-## Deploying Updates
-
-1. Test changes on staging domain using development mode eg. `toggleDevMode();`
-2. Push changes to GitHub repository
-3. Update jsDelivr link if needed
-4. Purge jsDelivr cache at [jsDelivr Purge Tool](https://www.jsdelivr.com/tools/purge)
-5. disable development mode to see the changes live
 
 ## Modifying the Calculator
 
