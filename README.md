@@ -19,7 +19,7 @@ loadScript("http://127.0.0.1:5500/script.js");
 toggleDevMode();
 ```
 
-5. Refresh page and check console for `Dev Mode Active`
+5. Refresh page and check console for<span style="color: green;"> `Dev Mode Active`</span>
 
 ## Integration with Webflow
 
