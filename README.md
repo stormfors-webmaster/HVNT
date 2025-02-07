@@ -17,6 +17,12 @@ toggleDevMode();
 
 ## Integration with Webflow
 
+## Dependencies
+
+- Webflow CMS: Source of pricing data
+- FlagCDN: Currency flag images
+- jsDelivr: Script delivery
+
 ### Data Flow
 
 1. Webflow CMS → HTML data attributes (via Collection List)
@@ -56,34 +62,6 @@ toggleDevMode();
 4. Purge jsDelivr cache at [jsDelivr Purge Tool](https://www.jsdelivr.com/tools/purge)
 5. Test on Webflow staging domain by untoggling development mode eg. `toggleDevMode();`
 
-## Debugging Guide
-
-### Development Tools
-
-- Use Chrome DevTools Console for error monitoring
-- Check Network tab for FlagCDN requests
-- Verify HTML data attributes in Elements panel
-- Check webflow CMS fields are populated
-
-### Common Issues
-
-1. **Price Calculation Verification:**
-
-   - Manually calculate: base-value × number of players
-   - Compare with displayed result in DOM
-   - Check browser console for errors
-
-2. **Data Attribute Issues:**
-
-   - Verify Webflow CMS fields are populated
-   - Check currency button data attributes in DOM
-   - Ensure all required attributes are present
-
-3. **FlagCDN Issues:**
-   - Default fallback image is provided
-   - Check network connectivity
-   - Verify country codes in `getCurrencyCountryCode()`
-
 ## Modifying the Calculator
 
 ### Common Modifications
@@ -113,11 +91,19 @@ toggleDevMode();
 4. Verify all currency options
 5. Test edge cases (min/max players)
 
-## Dependencies
+### Tips
 
-- Webflow CMS: Source of pricing data
-- FlagCDN: Currency flag images
-- jsDelivr: Script delivery
+- Use `console.log()` for error monitoring
+- Check Network tab for FlagCDN requests
+- Verify HTML data attributes in Elements panel
+- Check webflow CMS fields are populated
+
+### Potential Issues
+
+2. **FlagCDN Issues:**
+   - Default fallback image is provided
+   - Check network connectivity
+   - Verify country codes in `getCurrencyCountryCode()`
 
 ## Performance
 
