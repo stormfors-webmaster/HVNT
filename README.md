@@ -77,10 +77,10 @@ Elements with the following ID's will be toggled with `display: none` when month
 
 Elements with the following ID's will display the price from the CMS.
 
-- `monthly-price-original`
-- `yearly-price-original`
-- `monthly-price-offer`
-- `yearly-price-offer`
+- `monthly-price-text-original`
+- `monthly-price-text-offer`
+- `yearly-price-text-original`
+- `yearly-price-text-offer`
 
 ### Price display
 
