@@ -70,15 +70,17 @@ Element with id `cost` will display the price.
 <button id="yearly">Yearly</button>
 ```
 
-Two wrappers with the following ID's.
-id `monthly-price`
-id `yearly-price`
+### Wrappers
 
-Text elements with the following ID's.
-id `monthly-price-original`
-id `yearly-price-original`
-id `monthly-price-offer`
-id `yearly-price-offer`
+- `monthly-price`
+- `yearly-price`
+
+### Text Elements
+
+- `monthly-price-original`
+- `yearly-price-original`
+- `monthly-price-offer`
+- `yearly-price-offer`
 
 ### Price display
 
