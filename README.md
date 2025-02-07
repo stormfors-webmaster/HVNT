@@ -19,9 +19,7 @@ loadScript("http://127.0.0.1:5500/script.js");
 toggleDevMode();
 ```
 
-5. Refresh page and check console for<span style="color: green;"> `Dev Mode Active`</span>
-
-## Integration with Webflow
+5. Refresh page and check console for `✅ Dev Mode Active`
 
 ## Dependencies
 
@@ -41,7 +39,7 @@ toggleDevMode();
 ### Required HTML Structure
 
 ```html
-<!-- Essential elements with required data attributes -->
+<!-- Input slider with required data attributes -->
 <input type="range" class="input_range" min="5" max="250" />
 <span id="value"></span>
 <span id="cost"></span>
