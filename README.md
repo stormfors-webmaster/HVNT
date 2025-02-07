@@ -19,7 +19,7 @@ loadScript("http://127.0.0.1:5500/script.js");
 toggleDevMode();
 ```
 
-5. Test locally before deploying
+5. Refresh page and check console for `Dev Mode Active`
 
 ## Integration with Webflow
 
