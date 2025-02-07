@@ -51,7 +51,7 @@ ID to display the number of players and price per event.
 
 ### Currency buttons
 
-Data-attributes on the currency buttons are connected to the CMS in Webflow.
+Required Data-attributes
 
 - `[data-currency="connect-to-cms"]`
 - `[data-price-1-10="connect-to-cms"]`
@@ -65,6 +65,8 @@ Data-attributes on the currency buttons are connected to the CMS in Webflow.
 Required class for the currency flag.
 
 - `.currency-flag`
+
+### Example of a currency button
 
 ```html
 //Wrap in Webflow Collection List -> connected to pricing data
