@@ -64,7 +64,7 @@ Required Data-attributes, connect values to CMS data in webflow.
 - `[yearly-price-original]`
 - `[yearly-price-offer]`
 
-Required class for the currency flag.
+Required class for the country flag.
 
 - `.currency-flag`
 
