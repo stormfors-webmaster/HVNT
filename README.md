@@ -70,12 +70,12 @@ Element with id `cost` will display the price.
 <button id="yearly">Yearly</button>
 ```
 
-### Wrappers
+#### Wrappers
 
 - `monthly-price`
 - `yearly-price`
 
-### Text Elements
+#### Text Elements
 
 - `monthly-price-original`
 - `yearly-price-original`
