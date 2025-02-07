@@ -13,7 +13,7 @@ Author: Felix Hellström [@fellanh](https://github.com/fellanh)
 ```javascript
 //update this if your local server uses a different port
 loadScript("http://127.0.0.1:5500/script.js");
-//script can be found on the pricing page before `</body>` tag
+//script can be found on the pricing page settings `before </body>` tag
 ```
 
 4. Enable development mode by pasting below in chrome console:
