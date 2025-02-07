@@ -71,23 +71,21 @@ Required class for the country flag `<img>` element.
 ### Example of a currency button
 
 ```html
-<div role="listitem" class="w-dyn-item">
-  <button
-    data-currency='{{wf {"path":"currency","type":"PlainText"\} }}'
-    data-price-1-10='{{wf {"path":"monthly-price-offer","type":"PlainText"\} }}'
-    data-price-11-50='{{wf {"path":"monthly-price","type":"PlainText"\} }}'
-    data-price-above-50='{{wf {"path":"sek-price-50-players","type":"PlainText"\} }}'
-    monthly-price-original='{{wf {"path":"monthly-price","type":"PlainText"\} }}'
-    monthly-price-offer='{{wf {"path":"monthly-price-offer","type":"PlainText"\} }}'
-    yearly-price-original='{{wf {"path":"yearly-price","type":"PlainText"\} }}'
-    yearly-price-offer='{{wf {"path":"yearly-price-offer","type":"PlainText"\} }}'
-    class="price_currency">
-    <div class="p2 text-weight-medium">
-      {{wf {"path":"currency","type":"PlainText"\} }}
-    </div>
-    <img class="currency-flag" />
-  </button>
-</div>
+<button
+  data-currency='{{wf {"path":"currency","type":"PlainText"\} }}'
+  data-price-1-10='{{wf {"path":"monthly-price-offer","type":"PlainText"\} }}'
+  data-price-11-50='{{wf {"path":"monthly-price","type":"PlainText"\} }}'
+  data-price-above-50='{{wf {"path":"sek-price-50-players","type":"PlainText"\} }}'
+  monthly-price-original='{{wf {"path":"monthly-price","type":"PlainText"\} }}'
+  monthly-price-offer='{{wf {"path":"monthly-price-offer","type":"PlainText"\} }}'
+  yearly-price-original='{{wf {"path":"yearly-price","type":"PlainText"\} }}'
+  yearly-price-offer='{{wf {"path":"yearly-price-offer","type":"PlainText"\} }}'
+  class="price_currency">
+  <div class="p2 text-weight-medium">
+    {{wf {"path":"currency","type":"PlainText"\} }}
+  </div>
+  <img class="currency-flag" />
+</button>
 ```
 
 ### Monthly/Yearly toggle
