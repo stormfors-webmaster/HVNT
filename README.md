@@ -69,7 +69,7 @@ Required class for the currency flag.
 ### Example of a currency button
 
 ```html
-//Wrap in Webflow Collection List -> connected to pricing data
+//Pricing Collection List Item
 <button>
   //data attributes
   <img class="currency-flag" />
