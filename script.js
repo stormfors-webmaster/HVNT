@@ -1,4 +1,8 @@
-document.addEventListener("DOMContentLoaded", function () {
+console.log("pricing script loaded");
+var Webflow = Webflow || [];
+Webflow.push(function () {
+  // DOMready has fired
+  // May now use jQuery and Webflow api
   // DOM element selections
   const numberOfPlayers = document.querySelector("#value");
   const price = document.querySelector("#cost");
