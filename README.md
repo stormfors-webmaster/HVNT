@@ -1,12 +1,18 @@
 # HVNT Pricing Calculator
 
-A dynamic pricing calculator integrated with Webflow CMS for managing player-based pricing tiers and currency options.
+A dynamic pricing calculator integrated with Webflow CMS.
 
 ## Development Setup
 
 1. Clone the repository
 2. Use a local server (e.g., live-server) to serve the project
-3. Double check local server port and update webflow script if necessary.
+3. Update script tag in /pricing before `</body>` tag in Webflow if necessary
+
+```javascript
+//update this if your local server uses a different port
+loadScript("http://127.0.0.1:5500/script.js");
+```
+
 4. Enable development mode by pasting below in chrome console:
 
 ```javascript
