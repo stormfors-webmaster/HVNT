@@ -71,11 +71,27 @@ Required class for the country flag `<img>` element.
 ### Example of a currency button
 
 ```html
-//Pricing Collection List Item
-<button>
-  //add data attributes //add text element {{item-name}}
-  <img class="currency-flag" />
-</button>
+<div role="listitem" class="w-dyn-item">
+  <button
+    data-currency="SEK"
+    data-price-1-10="250"
+    data-price-11-50="220"
+    data-price-above-50="200"
+    monthly-price-original="6500"
+    monthly-price-offer="4350"
+    yearly-price-original="69000"
+    yearly-price-offer="46230"
+    class="price_currency">
+    <div class="p2 text-weight-medium">SEK</div>
+    <img
+      src="https://flagcdn.com/20x15/se.png"
+      loading="lazy"
+      width="16"
+      alt="SEK flag"
+      class="currency-flag"
+      srcset="https://flagcdn.com/40x30/se.png 2x" />
+  </button>
+</div>
 ```
 
 ### Monthly/Yearly toggle
