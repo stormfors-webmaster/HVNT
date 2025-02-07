@@ -73,23 +73,19 @@ Required class for the country flag `<img>` element.
 ```html
 <div role="listitem" class="w-dyn-item">
   <button
-    data-currency="SEK"
-    data-price-1-10="250"
-    data-price-11-50="220"
-    data-price-above-50="200"
-    monthly-price-original="6500"
-    monthly-price-offer="4350"
-    yearly-price-original="69000"
-    yearly-price-offer="46230"
+    data-currency='{{wf {"path":"currency","type":"PlainText"\} }}'
+    data-price-1-10='{{wf {"path":"monthly-price-offer","type":"PlainText"\} }}'
+    data-price-11-50='{{wf {"path":"monthly-price","type":"PlainText"\} }}'
+    data-price-above-50='{{wf {"path":"sek-price-50-players","type":"PlainText"\} }}'
+    monthly-price-original='{{wf {"path":"monthly-price","type":"PlainText"\} }}'
+    monthly-price-offer='{{wf {"path":"monthly-price-offer","type":"PlainText"\} }}'
+    yearly-price-original='{{wf {"path":"yearly-price","type":"PlainText"\} }}'
+    yearly-price-offer='{{wf {"path":"yearly-price-offer","type":"PlainText"\} }}'
     class="price_currency">
-    <div class="p2 text-weight-medium">SEK</div>
-    <img
-      src="https://flagcdn.com/20x15/se.png"
-      loading="lazy"
-      width="16"
-      alt="SEK flag"
-      class="currency-flag"
-      srcset="https://flagcdn.com/40x30/se.png 2x" />
+    <div class="p2 text-weight-medium">
+      {{wf {"path":"currency","type":"PlainText"\} }}
+    </div>
+    <img class="currency-flag" />
   </button>
 </div>
 ```
