@@ -7,13 +7,13 @@ Author: Felix Hellström [@fellanh](https://github.com/fellanh)
 ## Development Setup
 
 1. Clone the repository
-2. Use a local server (e.g., live-server) to serve the project
+2. Use a local server (e.g., live-server) to serve the script.js file
 3. Update script tag in Webflow if necessary (eg. if you're using a different port)
 
 ```javascript
 //update this if your local server uses a different port
 loadScript("http://127.0.0.1:5500/script.js");
-//script can be found on the pricing page settings `before </body>`
+//script located in the pricing page settings `before </body>`
 ```
 
 4. Enable development mode by pasting below in chrome console:
@@ -70,26 +70,6 @@ Required Data-attributes, connect values to CMS data in webflow.
 Required class for the country flag `<img>` element.
 
 - `.currency-flag`
-
-### Example of a currency button, see webflow for more details.
-
-```html
-<button
-  data-currency='{{wf {"path":"currency","type":"PlainText"\} }}'
-  data-price-1-10='{{wf {"path":"monthly-price-offer","type":"PlainText"\} }}'
-  data-price-11-50='{{wf {"path":"monthly-price","type":"PlainText"\} }}'
-  data-price-above-50='{{wf {"path":"sek-price-50-players","type":"PlainText"\} }}'
-  monthly-price-original='{{wf {"path":"monthly-price","type":"PlainText"\} }}'
-  monthly-price-offer='{{wf {"path":"monthly-price-offer","type":"PlainText"\} }}'
-  yearly-price-original='{{wf {"path":"yearly-price","type":"PlainText"\} }}'
-  yearly-price-offer='{{wf {"path":"yearly-price-offer","type":"PlainText"\} }}'
-  class="price_currency">
-  <div class="p2 text-weight-medium">
-    {{wf {"path":"currency","type":"PlainText"\} }}
-  </div>
-  <img class="currency-flag" />
-</button>
-```
 
 ### Monthly/Yearly toggle
 
