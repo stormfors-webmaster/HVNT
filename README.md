@@ -71,8 +71,8 @@ Element with id `cost` will display the price.
 ```
 
 Wrapper with id `monthly-price` and `yearly-price` will toggle the price display.
-Element with id `monthly-price-original` and `yearly-price-original` will display the _original_ price for each currency.
-Element with id `monthly-price-offer` and `yearly-price-offer` will display the _offer_ price for each currency.
+Element with id `monthly-price-original` and `yearly-price-original` will display the **original price** for each currency.
+Element with id `monthly-price-offer` and `yearly-price-offer` will display the **offer price** for each currency.
 
 ### Price display
 
