@@ -4,8 +4,8 @@ Webflow.push(function () {
   // DOMready has fired
   // May now use jQuery and Webflow api
   // DOM element selections
-  const numberOfPlayers = document.querySelector("#value");
-  const price = document.querySelector("#cost");
+  const numberOfPlayers = document.querySelector("#total-players");
+  const price = document.querySelector("#price-per-event");
   const input = document.querySelector(".input_range");
   const createAccountBtn = document.querySelector("#create-account");
   const contactUsBtn = document.querySelector("#contact-us");
