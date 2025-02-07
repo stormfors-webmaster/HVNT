@@ -68,7 +68,7 @@ Required class for the country flag `<img>` element.
 
 - `.currency-flag`
 
-### Example of a currency button
+### Example of a currency button, see webflow for more details.
 
 ```html
 <button
