@@ -80,15 +80,15 @@ Required class for the country flag `<img>` element.
 
 Elements with the following ID's will be toggled with `display: none` when monthly/yearly buttons are clicked.
 
-- `monthly-price`
-- `yearly-price`
+- `#monthly-price`
+- `#yearly-price`
 
 Elements with the following ID's will display the price from the CMS.
 
-- `monthly-price-text-original`
-- `monthly-price-text-offer`
-- `yearly-price-text-original`
-- `yearly-price-text-offer`
+- `#monthly-price-text-original`
+- `#monthly-price-text-offer`
+- `#yearly-price-text-original`
+- `#yearly-price-text-offer`
 
 ### Price display
 
