@@ -8,11 +8,12 @@ Author: Felix Hellström [@fellanh](https://github.com/fellanh)
 
 1. Clone the repository
 2. Use a local server (e.g., live-server) to serve the project
-3. Update script tag in /pricing before `</body>` tag in Webflow if necessary
+3. Update script tag in Webflow if necessary (eg. if you're using a different port)
 
 ```javascript
 //update this if your local server uses a different port
 loadScript("http://127.0.0.1:5500/script.js");
+//script can be found on the pricing page before `</body>` tag
 ```
 
 4. Enable development mode by pasting below in chrome console:
