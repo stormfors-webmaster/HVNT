@@ -7,7 +7,7 @@ A dynamic pricing calculator integrated with Webflow CMS for managing player-bas
 1. Clone the repository
 2. Use a local server (e.g., live-server) to serve the project
 3. Double check local server port and update webflow script if necessary.
-4. Enable development mode by pasting belowin chrome console:
+4. Enable development mode by pasting below in chrome console:
 
 ```javascript
 toggleDevMode();
