@@ -70,14 +70,10 @@ Element with id `cost` will display the price.
 <button id="yearly">Yearly</button>
 ```
 
-#### Business Plan Wrappers
-
 Elements with the following ID's will be toggled with `display: none` when monthly/yearly buttons are clicked.
 
 - `monthly-price`
 - `yearly-price`
-
-#### Business Plan Text Elements
 
 Elements with the following ID's will display the price from the CMS.
 
