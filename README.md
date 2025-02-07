@@ -2,6 +2,8 @@
 
 A dynamic pricing calculator integrated with Webflow CMS.
 
+Author: Felix Hellström [@fellanh](https://github.com/fellanh)
+
 ## Development Setup
 
 1. Clone the repository
@@ -181,7 +183,3 @@ Potential areas for enhancement:
 - Enhanced FlagCDN error handling
 - More sophisticated state management
 - Additional pricing tiers
-
-```
-
-```
