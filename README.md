@@ -51,16 +51,18 @@ ID to display the number of players and price per event.
 
 ### Currency buttons
 
-Required Data-attributes
+> Currency buttons must live inside a Collection List.
 
-- `[data-currency="connect-to-cms"]`
-- `[data-price-1-10="connect-to-cms"]`
-- `[data-price-11-50="connect-to-cms"]`
-- `[data-price-above-50="connect-to-cms"]`
-- `[monthly-price-original="connect-to-cms"]`
-- `[monthly-price-offer="connect-to-cms"]`
-- `[yearly-price-original="connect-to-cms"]`
-- `[yearly-price-offer="connect-to-cms"]`
+Required Data-attributes, connect value to CMS data in webflow.
+
+- `[data-currency]`
+- `[data-price-1-10]`
+- `[data-price-11-50]`
+- `[data-price-above-50]`
+- `[monthly-price-original]`
+- `[monthly-price-offer]`
+- `[yearly-price-original]`
+- `[yearly-price-offer]`
 
 Required class for the currency flag.
 
@@ -71,7 +73,7 @@ Required class for the currency flag.
 ```html
 //Pricing Collection List Item
 <button>
-  //data attributes
+  //add data attributes //add text element {{item-name}}
   <img class="currency-flag" />
 </button>
 ```
