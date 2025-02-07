@@ -53,7 +53,7 @@ ID to display the number of players and price per event.
 
 > Currency buttons must live inside a Collection List.
 
-Required Data-attributes, connect value to CMS data in webflow.
+Required Data-attributes, connect values to CMS data in webflow.
 
 - `[data-currency]`
 - `[data-price-1-10]`
