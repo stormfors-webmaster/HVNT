@@ -60,6 +60,13 @@ ID to display the number of players and price per event.
 - `#total-players`
 - `#price-per-event`
 
+### Discounts
+
+```javascript
+const discount10 = document.querySelector(".discount-10");
+const discount20 = document.querySelector(".discount-20");
+```
+
 ### Currency buttons
 
 > Currency buttons must live inside a Collection List.

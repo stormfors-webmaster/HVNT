@@ -10,7 +10,8 @@ Webflow.push(function () {
   const createAccountBtn = document.querySelector("#create-account");
   const contactUsBtn = document.querySelector("#contact-us");
   const currencyButtons = document.querySelectorAll("[data-currency]");
-
+  const discount10 = document.querySelector(".discount-10");
+  const discount20 = document.querySelector(".discount-20");
   // Price toggle elements
   const monthlyBtn = document.getElementById("monthly");
   const yearlyBtn = document.getElementById("yearly");
@@ -31,10 +32,16 @@ Webflow.push(function () {
 
     if (players <= 10) {
       price = parseInt(selectedButton.getAttribute("data-price-1-10"));
+      discount10.style.display = "none";
+      discount20.style.display = "none";
     } else if (players <= 50) {
       price = parseInt(selectedButton.getAttribute("data-price-11-50"));
+      discount20.style.display = "none";
+      discount10.style.display = "block";
     } else {
       price = parseInt(selectedButton.getAttribute("data-price-above-50"));
+      discount20.style.display = "block";
+      discount10.style.display = "none";
     }
 
     return price * players;
@@ -166,6 +173,8 @@ Webflow.push(function () {
   });
 
   // Initialize UI
+  discount10.style.display = "none";
+  discount20.style.display = "none";
   updateUI(numberOfPlayers);
   updateBusinessPlanPrices(selectedCurrency);
   toggleButtons();
