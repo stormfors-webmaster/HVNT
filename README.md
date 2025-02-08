@@ -29,7 +29,7 @@ toggleDevMode();
 1. Test changes on staging domain using development mode eg. `toggleDevMode();`
 2. Push changes to GitHub repository
 3. Update jsDelivr link if needed
-4. Purge jsDelivr cache at [jsDelivr Purge Tool](https://www.jsdelivr.com/tools/purge)
+4. Purge jsDelivr cache at [jsDelivr Purge Tool](https://www.jsdelivr.com/tools/purge) currenlty using this url `https://cdn.jsdelivr.net/gh/stormfors-webmaster/HVNT/script.js`
 5. disable development mode to see the changes live
 
 ## Dependencies
